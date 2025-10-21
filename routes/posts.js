@@ -8,6 +8,7 @@ let posts = [
 	{id:3 , title:'Post three'}
 ];
 
+
 // get all posts
 router.get('/' , (reg , res) => {
 	const limit = parseInt(reg.query.limit);
@@ -30,7 +31,6 @@ router.get('/:id' , (reg , res) => {
 	}
 });
 
-// create new post
 // create new post
 router.post('/' , (req , res) => {
 	const newPost = {
@@ -60,7 +60,6 @@ router.put('/:id' , (req , res) => {
 });
 
 // del post
-
 router.delete('/:id' , (req , res) => {
 	const id = parseInt(req.params.id);
 	const post = posts.find((post) => post.id === id);
