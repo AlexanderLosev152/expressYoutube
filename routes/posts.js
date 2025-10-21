@@ -31,6 +31,7 @@ router.get('/:id' , (reg , res) => {
 });
 
 // create new post
+// create new post
 router.post('/' , (req , res) => {
 	const newPost = {
 		id:posts.length + 1 ,
